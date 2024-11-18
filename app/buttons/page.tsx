@@ -10,7 +10,7 @@ import { BiHome } from "react-icons/bi";
 
 const Buttons = () => {
   return (
-    <div className=" flex flex-col font-mono items-center justify-center h-screen">
+    <div className=" flex flex-col font-mono items-center justify-center h-full">
       <div className="flex justify-start w-3/4">
         <Link
           href={"./"}

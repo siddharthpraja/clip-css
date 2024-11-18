@@ -39,3 +39,17 @@
   transform: rotate(-45deg);
 }
 
+.sidebarMenu {
+  display: none;
+}
+
+#sidebarclick:checked ~ .sidebarMenu {
+  display: flex;
+  flex-direction: column;
+}
+
+#sidebarclick:checked ~ label .sidebarbutton {
+  transform: rotate(0deg);
+  right: 20px;
+  bottom:30px;
+}

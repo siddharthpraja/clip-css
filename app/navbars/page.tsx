@@ -7,7 +7,7 @@ import { BiHome } from "react-icons/bi";
 
 const Navbars = () => {
   return (
-    <div className="flex flex-col justify-center gap-10">
+    <div className="flex flex-col justify-center gap-10 h-full">
       <Link
         href={"./"}
         className="border px-2 w-max mx-2 flex gap-2 items-center hover:bg-black hover:text-white py-1 rounded-lg my-2"

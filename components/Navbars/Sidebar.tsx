@@ -7,27 +7,28 @@ import { IoIosRadioButtonOff } from "react-icons/io";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 import { SiCssdesignawards } from "react-icons/si";
 import { TbLayoutNavbarInactive } from "react-icons/tb";
+import "./navbar.css";
 
 const Sidebar = () => {
   return (
-    <div className="w-max z-50 flex   bg-neutral-100 border-r dark:bg-black h-screen flex-col relative">
-      <Link
-        href={"/"}
-        className=" flex gap-2  justify-start w-56 px-4   h-16 items-center"
-      >
-        <SiCssdesignawards className="text-2xl rotate-6" />{" "}
-        <div className=" font-mono">Clip-CSS</div>
-      </Link>
+    <div className="w-max z-50 flex  bg-neutral-100 dark:bg-neutral-950 border-r   h-screen flex-col relative">
       <input
         type="checkbox"
-        name="sidebararrow"
-        id="sidebararrow"
+        name="sidebarclick"
+        id="sidebarclick"
         className="hidden"
       />
-      <label htmlFor="sidebararrow">
-        <MdKeyboardDoubleArrowRight className="text-3xl p-1 rotate-180 absolute bottom-4 right-4 hover:rotate-0 duration-500 bg-white dark:bg-black  border rounded-full" />
+      <label htmlFor="sidebarclick">
+        <MdKeyboardDoubleArrowRight className="text-3xl p-1 rotate-180 absolute sidebarbutton  bottom-6 -right-10  duration-500 bg-white dark:bg-black  border rounded-full" />
       </label>
-      <div className="space-y-1  p-2">
+      <div className="space-y-1 sidebarMenu   p-2">
+        <Link
+          href={"/"}
+          className=" flex gap-2   justify-start w-56 px-4   h-16 items-center"
+        >
+          <SiCssdesignawards className="text-2xl rotate-6" />{" "}
+          <div className=" font-mono">Clip-CSS</div>
+        </Link>
         <div className="">
           <Link
             href={"/buttons"}
