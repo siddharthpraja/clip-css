@@ -1,0 +1,82 @@
+
+
+/* Flip Cards */
+
+.flip-card {
+  background-color: transparent;
+  perspective: 1000px; /* Remove this if you want a flat view */
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 25vh;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 25vh;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  z-index: 2;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+/* 3d Mockup  */
+.soda {
+  background: var(--url), url(/front.png) 0 0;
+  background-size: auto 100%;
+  width: 150px;
+  aspect-ratio: 6/12;
+  background-blend-mode: multiply;
+  scale: 0.8;
+  mask-image: url(/front.png);
+  mask-size: auto 100%;
+}
+
+.soda:hover {
+  background: var(--url2), url(/front.png) 0 0;
+  background-size: auto 100%;
+  aspect-ratio: 6/12;
+  scale: 1;
+  background-blend-mode: multiply;
+  transition: 0.8s;
+  mask-image: url(/front.png);
+}
+
+
+/* Onload Animation */
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.onload {
+  animation: appear 1s alternate;
+}
+
+.onscroll {
+  animation: appear 1s alternate;
+  animation-timeline: view();
+  animation-range: entry 0% cover 50%;
+}

@@ -1,0 +1,41 @@
+.menu {
+  display: none;
+}
+
+#click:checked ~ .menu {
+  display: flex;
+}
+
+#click:checked + label .top {
+  transform: rotate(45deg);
+}
+
+#click:checked + label .middle {
+  opacity: 0;
+}
+
+#click:checked + label .bottom {
+  transform: rotate(-45deg);
+}
+
+/* Navbar 2 */
+.menu2 {
+  display: none;
+}
+
+#click2:checked ~ .menu2 {
+  display: flex;
+}
+
+#click2:checked + label .top {
+  transform: rotate(45deg);
+}
+
+#click2:checked + label .middle {
+  opacity: 0;
+}
+
+#click2:checked + label .bottom {
+  transform: rotate(-45deg);
+}
+

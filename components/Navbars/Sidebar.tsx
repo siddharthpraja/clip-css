@@ -1,0 +1,81 @@
+import Link from "next/link";
+import React from "react";
+import { BiLogoHeroku } from "react-icons/bi";
+import { BsMenuButtonFill } from "react-icons/bs";
+import { CiSquareMore } from "react-icons/ci";
+import { IoIosRadioButtonOff } from "react-icons/io";
+import { MdKeyboardDoubleArrowRight } from "react-icons/md";
+import { SiCssdesignawards } from "react-icons/si";
+import { TbLayoutNavbarInactive } from "react-icons/tb";
+
+const Sidebar = () => {
+  return (
+    <div className="w-max z-50 flex   bg-neutral-100 border-r dark:bg-black h-screen flex-col relative">
+      <Link
+        href={"/"}
+        className=" flex gap-2  justify-start w-56 px-4   h-16 items-center"
+      >
+        <SiCssdesignawards className="text-2xl rotate-6" />{" "}
+        <div className=" font-mono">Clip-CSS</div>
+      </Link>
+      <input
+        type="checkbox"
+        name="sidebararrow"
+        id="sidebararrow"
+        className="hidden"
+      />
+      <label htmlFor="sidebararrow">
+        <MdKeyboardDoubleArrowRight className="text-3xl p-1 rotate-180 absolute bottom-4 right-4 hover:rotate-0 duration-500 bg-white dark:bg-black  border rounded-full" />
+      </label>
+      <div className="space-y-1  p-2">
+        <div className="">
+          <Link
+            href={"/buttons"}
+            className=" flex gap-2 w-full border bg-white dark:bg-black justify-start  px-4 py-2 rounded-xl items-center"
+          >
+            <IoIosRadioButtonOff className="" />
+            <div className=" font-mono">Buttons</div>
+          </Link>
+        </div>
+        <div className="">
+          <Link
+            href={"/navbars"}
+            className=" flex gap-2 w-full border bg-white dark:bg-black justify-start  px-4 py-2 rounded-xl items-center"
+          >
+            <TbLayoutNavbarInactive className="" />
+            <div className=" font-mono">Navbars</div>
+          </Link>
+        </div>
+        <div className="">
+          <Link
+            href={"/heros"}
+            className=" flex gap-2 w-full border bg-white dark:bg-black justify-start  px-4 py-2 rounded-xl items-center"
+          >
+            <BiLogoHeroku className="" />
+            <div className=" font-mono">Hero Sections</div>
+          </Link>
+        </div>
+        <div className="">
+          <Link
+            href={"/features"}
+            className=" flex gap-2 w-full border bg-white dark:bg-black justify-start  px-4 py-2 rounded-xl items-center"
+          >
+            <BsMenuButtonFill className="" />
+            <div className=" font-mono">Features</div>
+          </Link>
+        </div>
+        <div className="">
+          <Link
+            href={"/soon"}
+            className=" flex gap-2 w-full border bg-white dark:bg-black justify-start  px-4 py-2 rounded-xl items-center"
+          >
+            <CiSquareMore className="text-xl" />
+            <div className=" font-mono">More Componets</div>
+          </Link>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Sidebar;
