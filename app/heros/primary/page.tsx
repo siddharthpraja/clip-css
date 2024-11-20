@@ -138,7 +138,7 @@ export default Feature1;
 
 `;
 
-const Navbars = () => {
+const HeroSection1 = () => {
   return (
     <div className="flex flex-col justify-center items-center gap-10 mb-10">
       <Link
@@ -189,4 +189,4 @@ const Navbars = () => {
   );
 };
 
-export default Navbars;
+export default HeroSection1;

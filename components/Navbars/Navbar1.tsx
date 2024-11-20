@@ -7,7 +7,7 @@ import ThemeToggle from "../Buttons/Theme";
 
 const Navbar = () => {
   return (
-    <div className="flex h-20 z-10 flex-row sticky px-4 md:px-8 lg:px-16 2xl:px-28 top-0 bg-neutral-100/90 dark:bg-neutral-900/90 backdrop-blur-sm items-center justify-between ">
+    <div className="flex h-20 z-20 flex-row sticky px-4 md:px-8 lg:px-16 2xl:px-28 top-0 bg-neutral-100/90 dark:bg-neutral-900/90 backdrop-blur-sm items-center justify-between ">
       {/* Logo */}
       <Link href={"/"} className=" flex gap-2 items-center">
         <IoClipboardSharp className="text-3xl" />{" "}

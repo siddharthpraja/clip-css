@@ -17,7 +17,7 @@ const iconData: IconItem[] = [
     id: 1,
     icon: FaStar,
     bgColor: "bg-indigo-500 dark:bg-indigo-800",
-    text: "Hear what you send",
+    text: "Minimal price $16 Only",
     iconColor: "text-pink-400 dark:text-pink-700",
     iconAlt: "star",
     imgSrc: "/money.svg",
@@ -26,7 +26,7 @@ const iconData: IconItem[] = [
     id: 2,
     icon: FaSquare,
     bgColor: "bg-purple-500 dark:bg-purple-800",
-    text: "Set alarm on trades",
+    text: "Reduce your styling time",
     iconColor: "text-green-400 dark:text-green-500 rotate-45",
     iconAlt: "square",
     imgSrc: "/alarm.svg",
@@ -35,7 +35,7 @@ const iconData: IconItem[] = [
     id: 3,
     icon: BsOctagonFill,
     bgColor: "bg-yellow-300 dark:bg-yellow-500",
-    text: "Always find best deals",
+    text: "Always find quality Clips",
     iconColor: "text-fuchsia-500",
     iconAlt: "octagon",
     imgSrc: "/magnifier.svg",
@@ -44,7 +44,7 @@ const iconData: IconItem[] = [
     id: 4,
     icon: IoTriangle,
     bgColor: "bg-green-300 dark:bg-green-600",
-    text: "Keep your money safe",
+    text: "Easy to manage & use",
     iconColor: "text-orange-400 dark:text-orange-500",
     iconAlt: "triangle",
     imgSrc: "/suitcase.svg",
@@ -64,7 +64,7 @@ const Feature1: React.FC = () => {
               className={`w-full h-52 ${iconColor} group-hover:scale-[4] duration-500 rounded-[50px]`}
             />
             <div className="group-hover:flex duration-500 hidden">
-              <h1 className="text-4xl w-1/2 absolute top-0 left-5 font-serif py-8 p-4">
+              <h1 className="text-4xl z-20 w-1/2 absolute top-0 left-5 font-serif py-8 p-4">
                 {text}
               </h1>
               {/* Add coin images */}
@@ -87,7 +87,7 @@ const Feature1: React.FC = () => {
               <img
                 src={imgSrc}
                 alt={iconAlt}
-                className="absolute bottom-0 right-0 w-40"
+                className="absolute z-0 bottom-0 right-0 w-40"
               />
             </div>
           </div>

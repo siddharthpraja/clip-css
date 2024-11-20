@@ -6,7 +6,7 @@ import { BiArrowBack, BiHome } from "react-icons/bi";
 
 const Navbars = () => {
   return (
-    <div className="h-full">
+    <div className="h-full overflow-hidden">
       <Link
         href={"./"}
         className="border px-2 w-max mx-2 flex gap-2 items-center hover:bg-black hover:text-white py-1 rounded-lg my-2"

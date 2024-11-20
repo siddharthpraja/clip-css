@@ -105,7 +105,7 @@ const globalcss = `
 
 `;
 
-const UnivesalNav = () => {
+const SearchNav = () => {
   return (
     <div className="">
       <Navbar2 />
@@ -149,4 +149,4 @@ const UnivesalNav = () => {
   );
 };
 
-export default UnivesalNav;
+export default SearchNav;

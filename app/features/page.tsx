@@ -14,10 +14,10 @@ const Navbars = () => {
       >
         <BiArrowBack /> Back
       </Link>
-      <div className="grid grid-cols-1 px-2  gap-2">
+      <div className="grid grid-cols-1 px-2  gap-6">
         <div className="text-center h-full py-8 border rounded-lg">
           <div className="h-max">
-           <Feature1 />
+            <Feature1 />
           </div>
 
           <Link
@@ -29,26 +29,26 @@ const Navbars = () => {
         </div>
         <div className="text-center h-full py-8 border rounded-lg">
           <div className="h-max">
-            <Feature3/>
-          </div>
-
-          <Link
-            className="border px-2 w-max py-1 text-center rounded-lg"
-            href="/features/procategories"
-          >
-            Copy this Product Categories
-          </Link>
-        </div>
-        <div className="text-center h-full py-8 border rounded-lg">
-          <div className="h-max">
-            <Feature2/>
+            <Feature2 />
           </div>
 
           <Link
             className="border px-2 w-max py-1 text-center rounded-lg"
             href="/features/propages"
           >
-            Copy this Products page
+            Copy this Product page
+          </Link>
+        </div>
+        <div className="text-center h-full py-8 border rounded-lg">
+          <div className="h-max">
+            <Feature3 />
+          </div>
+
+          <Link
+            className="border px-2 w-max py-1 text-center rounded-lg"
+            href="/features/procategories"
+          >
+            Copy this Products Categories
           </Link>
         </div>
       </div>

@@ -6,14 +6,29 @@ import { ImAppleinc } from "react-icons/im";
 import ThemeToggle from "../Buttons/Theme";
 import { CgProfile } from "react-icons/cg";
 import { BsSearch } from "react-icons/bs";
+import { FcCopyright } from "react-icons/fc";
 
 const Navbar2 = () => {
   return (
     <div className="flex h-16 z-10  flex-row sticky px-4 md:px-8 lg:px-16 2xl:px-28  top-0 bg-neutral-100 dark:bg-neutral-900 backdrop-blur-sm  items-center justify-between ">
       {/* Logo */}
       <Link href={"/"} className=" flex gap-2 items-center">
-        <IoClipboardSharp className="text-3xl" />{" "}
-        <div className="text-xl font-mono">Clip-CSS</div>
+        <div className="relative">
+          <span className="text-lg font-bold text-[#2196F3]">Clip</span>
+          <span className="text-lg font-bold text-[#8BC34A]">CSS</span>
+          <div
+            className="absolute top-0 left-0 w-1/2 h-1/2 bg-[#FFC107]"
+            style={{
+              clipPath: "polygon(0 0, 100% 0, 100% 50%, 0 50%)",
+            }}
+          />
+          <div
+            className="absolute bottom-0 right-0 w-1/2 h-1/2 bg-[#9C27B0]"
+            style={{
+              clipPath: "polygon(50% 100%, 100% 50%, 100% 100%, 50% 100%)",
+            }}
+          />
+        </div>
       </Link>
       {/* Nav */}
 

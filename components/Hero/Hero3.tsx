@@ -5,8 +5,8 @@ import Image from "next/image";
 
 const Hero3 = () => {
   return (
-    <div className="bg-white relative dark:bg-black pb-6 overflow-hidden">
-      <div className="grid grid-cols-1 md:grid-cols-3 w-10/12 mx-auto ">
+    <div className="bg-white relative dark:bg-black pb-6 w-full overflow-hidden">
+      <div className="grid grid-cols-1 md:grid-cols-3 w-10/12  mx-auto ">
         <div className="">
           <h1 className="xl:text-5xl font-semibold  text-4xl w-full h-[35vh] flex flex-col items-start justify-center mx-auto -rotate-6">
             Drive Fresh, Live{" "}
@@ -43,7 +43,7 @@ const Hero3 = () => {
         </div>
       </div>
       <div className="w-full h-max  flex justify-center z-10 -rotate-3 md:-rotate-1 bg-neutral-200 dark:text-neutral-900">
-        <p className="text-xl font-mono w-max p-3">
+        <p className="text-xl font-mono w-full p-3">
           EcoCars vehicles are more &#183; environmentally friendly than
           traditional cars &#183; as they produce fewer &#183; emissions and use
           less fuel.

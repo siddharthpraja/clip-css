@@ -1,13 +1,15 @@
 "use client";
 
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef } from "react";
+import { IoCopy, IoCopyOutline } from "react-icons/io5";
+import { MdOutlineDone } from "react-icons/md";
 
 interface CopyButtonProps {
   code: string;
   className?: string; // Added optional className prop
 }
 
-const CopyButton: React.FC<CopyButtonProps> = ({ code, className = '' }) => {
+const CopyButton: React.FC<CopyButtonProps> = ({ code, className = "" }) => {
   const [copied, setCopied] = useState<boolean>(false);
   const textRef = useRef<HTMLParagraphElement>(null);
 
@@ -20,12 +22,23 @@ const CopyButton: React.FC<CopyButtonProps> = ({ code, className = '' }) => {
   };
 
   return (
-    <div className={className}> 
+    <div className={className}>
       <p ref={textRef} className="hidden">
         {code}
       </p>
-      <button className={`underline ${className}`} onClick={handleCopy}>
-        {copied ? 'Copied!' : 'Copy'}
+      <button
+        className={`underline flex items-center ${className}`}
+        onClick={handleCopy}
+      >
+        {copied ? (
+          <>
+            <MdOutlineDone className="" />
+          </>
+        ) : (
+          <>
+            <IoCopyOutline className="" />
+          </>
+        )}
       </button>
     </div>
   );

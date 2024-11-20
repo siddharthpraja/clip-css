@@ -1,76 +1,39 @@
-import Button3D from "@/components/Buttons/Button3D";
-import ButtonRainbow from "@/components/Buttons/Buttongradent";
-import LoadingButton from "@/components/Buttons/ButtonLoading";
-import NeonButton from "@/components/Buttons/ButtonNeon";
-import ParallaxButton from "@/components/Buttons/ParalexButton";
-import ThemeToggle from "@/components/Buttons/Theme";
+import CopyButton from "@/components/Copycode";
+import { buttons } from "@/Data/Buttons";
 import Link from "next/link";
-import React from "react";
-import { BiHome } from "react-icons/bi";
+import { BiArrowBack } from "react-icons/bi";
+
 
 const Buttons = () => {
   return (
-    <div className=" flex flex-col font-mono items-center justify-center h-full">
-      <div className="flex justify-start w-3/4">
-        <Link
-          href={"./"}
-          className="border px-2 flex gap-2 items-center hover:bg-black hover:text-white py-1 rounded-lg my-2"
-        >
-          <BiHome /> home
-        </Link>
-      </div>
-      <div className="flex flex-wrap items-center justify-center h-max w-2/3">
-        <div className="p-4 items-center flex flex-col">
-          <ThemeToggle />
-          <Link
-            className="border px-2 py-1 rounded-lg my-2"
-            href="/buttons/dark"
+    <div className="h-full overflow-hidden">
+      <Link
+        href={"./"}
+        className="border px-2 w-max mx-2 flex gap-2 items-center hover:bg-black hover:text-white py-1 rounded-lg my-2"
+      >
+        <BiArrowBack /> Back
+      </Link>
+      <div className="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 px-2 gap-2">
+        {buttons.map((button, index) => (
+          <div
+            key={index}
+            className="h-full relative flex justify-center flex-col items-center py-8 border rounded-lg"
           >
-            Code to Dark Mode
-          </Link>
-        </div>
-        <div className="p-4 gap-2 items-center flex flex-col">
-          <NeonButton>Neon Button</NeonButton>
-          <Link
-            className="border px-2 py-1 rounded-lg my-2"
-            href="/buttons/neon"
-          >
-            Code to Neon
-          </Link>
-        </div>
-        <div className="p-4 gap-2 items-center flex flex-col">
-          <Button3D className="bg-blue-600">3D Button</Button3D>
-          <Link className="border px-2 py-1 rounded-lg my-2" href="/buttons/3d">
-            Code to 3D
-          </Link>
-        </div>
-        <div className="p-4 gap-2 items-center flex flex-col">
-          <ParallaxButton >Parallex</ParallaxButton>
-          <Link
-            className="border px-2 py-1 rounded-lg my-2"
-            href="/buttons/parallax"
-          >
-            Code to Parallex
-          </Link>
-        </div>
-        <div className="p-4 gap-2 items-center flex flex-col">
-          <LoadingButton />
-          <Link
-            className="border px-2 py-1 rounded-lg my-2"
-            href="/buttons/loading"
-          >
-            Code to Loading
-          </Link>
-        </div>
-        <div className="p-4 gap-2 items-center flex flex-col">
-          <ButtonRainbow> Rainbow </ButtonRainbow>
-          <Link
-            className="border px-2 py-1 rounded-lg my-2"
-            href="/buttons/rainbow"
-          >
-            Code to Rainbow
-          </Link>
-        </div>
+            {/* Render the button components directly */}
+            <div className="h-max">{button.component}</div>
+
+            {/* Link to button description page */}
+            <div className="absolute top-4 right-4">
+              <CopyButton code={button.code || button.description} />
+            </div>
+            <Link
+              className="border px-2 w-max py-1 mt-4 rounded-lg"
+              href={`/buttons/test`}
+            >
+              {button.description}
+            </Link>
+          </div>
+        ))}
       </div>
     </div>
   );

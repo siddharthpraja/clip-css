@@ -197,7 +197,7 @@ const globalcss = `
 
 `;
 
-const Navbars = () => {
+const HeroSection2 = () => {
   return (
     <div className="flex flex-col justify-center items-center gap-10 mb-10">
       <Link
@@ -232,4 +232,4 @@ const Navbars = () => {
   );
 };
 
-export default Navbars;
+export default HeroSection2;

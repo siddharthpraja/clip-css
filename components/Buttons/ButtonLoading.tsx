@@ -1,7 +1,13 @@
 "use client";
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import { AiOutlineLoading3Quarters } from "react-icons/ai";
 
-const LoadingButton = () => {
+interface ButtonProps {
+  children: React.ReactNode;
+  className?: string;
+}
+
+const LoadingButton = ({ children, className, ...props }: ButtonProps) => {
   const [isLoading, setIsLoading] = useState(false);
 
   const handleClick = () => {
@@ -14,28 +20,19 @@ const LoadingButton = () => {
 
   return (
     <button
-      className={`bg-yellow-400 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded ${
-        isLoading ? 'opacity-80 pointer-events-none' : ''
-      }`}
+      className={`border font-bold py-2 px-4 rounded ${
+        className || "bg-yellow-400"
+      } ${isLoading ? "opacity-80 pointer-events-none" : ""}`}
       onClick={handleClick}
+      {...props} // Spread additional props like onClick, etc.
     >
       {isLoading ? (
-        <span className="flex items-center">
-          <svg
-            className="animate-spin h-5 w-5 mr-2"
-            viewBox="0 0 24 24"
-          >
-            <circle
-              className="fill-none stroke-white stroke-2"
-              cx="12"
-              cy="12"
-              r="10"
-            />
-          </svg>
+        <span className="flex items-center gap-2">
+          <AiOutlineLoading3Quarters className="animate-spin" />
           Loading...
         </span>
       ) : (
-        'Loading'
+        children
       )}
     </button>
   );

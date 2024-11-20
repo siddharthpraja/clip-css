@@ -1,5 +1,4 @@
 import CopyButton from "@/components/Copycode";
-import Hero2 from "@/components/Hero/Hero2";
 import Hero3 from "@/components/Hero/Hero3";
 import Link from "next/link";
 import React from "react";
@@ -51,7 +50,7 @@ const Hero3 = () => {
         </div>
       </div>
       <div className="w-full h-max  flex justify-center z-10 -rotate-3 md:-rotate-1 bg-neutral-200 dark:text-neutral-900">
-        <p className="text-xl font-mono w-max p-3">
+        <p className="text-xl font-mono w-full p-3">
           EcoCars vehicles are more &#183; environmentally friendly than
           traditional cars &#183; as they produce fewer &#183; emissions and use
           less fuel.
@@ -90,7 +89,7 @@ const globalcss = `
 
 `;
 
-const Navbars = () => {
+const UniqueHero = () => {
   return (
     <div className="flex flex-col justify-center items-center gap-10 mb-10">
       <Link
@@ -138,4 +137,4 @@ const Navbars = () => {
   );
 };
 
-export default Navbars;
+export default UniqueHero;

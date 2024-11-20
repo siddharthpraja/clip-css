@@ -1,23 +1,27 @@
 import React from "react";
 import Button3D from "../Buttons/Button3D";
-import IconGrid from "../Features/Feature1";
+import IconGrid from "../Features/Feature1";  // Assuming this is a feature grid component for Clip-CSS
 
 const Hero1 = () => {
   return (
-    <div className="w-4/5  mx-auto">
-      <h1 className="text-4xl onload delay-100 font-serif md:text-5xl lg:text-6xl xl:text-8xl my-4 md:my-6 ">
-        Sending Money Abord <br /> has never been cheaper.
+    <div className="w-4/5 mx-auto">
+      {/* Hero Heading */}
+      <h1 className="text-4xl onload delay-100 font-serif md:text-5xl lg:text-6xl xl:text-8xl my-4 md:my-6">
+        Elevate Your Designs <br /> with Clip-CSS.
       </h1>
-      <p className="lg:w-3/4 onload delay-300 duration-500 my-4 text-xs  md:text-sm xl:text-base text-wrap">
-        You might not have received a reward for the offer terms and conditions.
-        You can check the offer details to learn more. If you think your payment
-        was eligible but the reward wasn't applied automatically, you can raise
-        a ticket with PhonePe.
+      
+      {/* Hero Description */}
+      <p className="lg:w-3/4 onload delay-300 duration-500 my-4 text-xs md:text-sm xl:text-base text-wrap">
+        Clip-CSS simplifies web development by offering reusable utility classes and custom clips for styling. 
+        Whether you're building a website from scratch or optimizing an existing one, Clip-CSS provides the flexibility you need.
       </p>
-      <Button3D className="m-2 onload bg-black dark:bg-white dark:text-black">
-        Get it now
+      
+      {/* Action Button */}
+      <Button3D className="m-2 onload text-white bg-black dark:bg-white dark:text-black">
+        Get Started
       </Button3D>
-      <IconGrid />
+      
+      {/* Features or Icons grid component (can show utility features of Clip-CSS) */}
     </div>
   );
 };

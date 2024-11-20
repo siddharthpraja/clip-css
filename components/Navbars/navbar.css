@@ -51,5 +51,5 @@
 #sidebarclick:checked ~ label .sidebarbutton {
   transform: rotate(0deg);
   right: 20px;
-  bottom:30px;
+  bottom: 40px;
 }
