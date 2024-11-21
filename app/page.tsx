@@ -7,7 +7,6 @@ const Home = () => {
         <h1 className="text-2xl  onload delay-100 font-serif md:text-4xl lg:text-6xl xl:text-6xl my-4 md:my-6">
           Elevate Your Web-Designs <br /> with Clip-CSS.
         </h1>
-        
 
         {/* Hero Description */}
         <p className="lg:w-3/4 onload delay-300 duration-500 my-4 text-xs md:text-xs xl:text-sm text-wrap">
@@ -40,16 +39,17 @@ const Home = () => {
         Hero Sections
       </Link>
       <Link
-        href={"/features"}
-        className="w-1/2 border-y  hover:border-orange-500 text-center p-2 rounded-xl" >
-        Features
-        </Link>
-        <Link
+        href={"/products"}
+        className="w-1/2 border-y  hover:border-orange-500 text-center p-2 rounded-xl"
+      >
+        Products
+      </Link>
+      <Link
         href={"/soon"}
-        className="w-1/2 border-y  hover:border-orange-500 text-center p-2 rounded-xl" >
+        className="w-1/2 border-y  hover:border-orange-500 text-center p-2 rounded-xl"
+      >
         Coming Soon
-        </Link>
-
+      </Link>
     </div>
   );
 };
