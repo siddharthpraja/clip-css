@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Home = () => {
   return (
-    <div className="flex flex-col gap-4 items-center justify-center h-full">
+    <div className="flex flex-col gap-4 items-center justify-center h-screen">
       <div className="w-2/3">
         <h1 className="text-2xl  onload delay-100 font-serif md:text-4xl lg:text-6xl xl:text-6xl my-4 md:my-6">
           Elevate Your Web-Designs <br /> with Clip-CSS.
@@ -41,10 +41,14 @@ const Home = () => {
       </Link>
       <Link
         href={"/features"}
-        className="w-1/2 border-y  hover:border-orange-500 text-center p-2 rounded-xl"
-      >
+        className="w-1/2 border-y  hover:border-orange-500 text-center p-2 rounded-xl" >
         Features
-      </Link>
+        </Link>
+        <Link
+        href={"/soon"}
+        className="w-1/2 border-y  hover:border-orange-500 text-center p-2 rounded-xl" >
+        Coming Soon
+        </Link>
 
     </div>
   );

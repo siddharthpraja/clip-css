@@ -31,7 +31,7 @@ export default function RootLayout({
       >
         <div className="flex">
           <Sidebar />
-          <div className="max-h-screen w-full  overflow-x-scroll z-10 absolute lg:relative">
+          <div className="max-h-screen w-full select-auto  overflow-x-scroll z-10 absolute lg:relative">
             {children}
           </div>
         </div>

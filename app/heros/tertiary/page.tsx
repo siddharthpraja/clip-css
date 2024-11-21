@@ -94,11 +94,11 @@ const UniqueHero = () => {
     <div className="flex flex-col justify-center items-center gap-10 mb-10">
       <Link
         href={"./"}
-        className="border absolute top-2 px-4 left-4  flex gap-2 items-center hover:bg-black hover:text-white py-1 rounded-lg my-2"
+        className="border z-10 absolute top-2 px-4 left-4  flex gap-2 items-center hover:bg-black hover:text-white py-1 rounded-lg my-2"
       >
         <BiArrowBack /> Back
       </Link>
-      <div className="mt-12">
+      <div className="mt-10">
         <Hero3 />
       </div>
       <div className="w-2/3">

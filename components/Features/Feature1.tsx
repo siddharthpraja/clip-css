@@ -61,7 +61,7 @@ const Feature1: React.FC = () => {
             className={`${bgColor} h-64 rounded-[50px] relative group flex items-center overflow-hidden`}
           >
             <Icon
-              className={`w-full h-52 ${iconColor} group-hover:scale-[4] duration-500 rounded-[50px]`}
+              className={`w-full h-52 ${iconColor} group-hover:scale-[5] duration-500 rounded-[50px]`}
             />
             <div className="group-hover:flex duration-500 hidden">
               <h1 className="text-4xl z-20 w-1/2 absolute top-0 left-5 font-serif py-8 p-4">

@@ -147,7 +147,9 @@ const HeroSection1 = () => {
       >
         <BiArrowBack /> Back
       </Link>
-      <Hero1 />
+      <div className="mt-12">
+        <Hero1 />
+      </div>
       <div className="w-2/3">
         <div className="p-4">
           <strong>Step1:</strong>  Add the following to your{" "}

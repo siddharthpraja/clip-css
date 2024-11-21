@@ -18,7 +18,7 @@ const Hero2 = () => {
           </div>
           <div className="flex items-center w-20 h-20 justify-center relative rounded-full border-2 border-black dark:border-gray-200">
             <MdOutlineArrowOutward className="w-1/3 h-20" />
-            <p className="absolute bg-white dark:bg-black text-xs font-bold lg:left-8 xl:left-10  -top-6 p-2 left-10">
+            <p className="absolute bg-white text-black dark:bg-black dark:text-white text-xs font-bold lg:left-8 xl:left-10  -top-6 p-2 left-10">
               Explore Catalog
             </p>
           </div>
@@ -147,7 +147,7 @@ const Hero2 = () => {
             stretch to the horizon.
           </p>
           <div className="my-4 flex flex-row items-center justify-center gap-4">
-            <Button3D className="bg-black dark:bg-white dark:text-black w-max">Book Now</Button3D>
+            <Button3D className="bg-black text-white dark:bg-white dark:text-black w-max">Book Now</Button3D>
             <button className="border p-2 rounded-md w-max">Explore More</button>
           </div>
           <div className="my-8 flex flex-row items-center justify-center gap-1">

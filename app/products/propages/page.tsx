@@ -204,7 +204,9 @@ const Navbars = () => {
           <h1 className="">
             <CopyButton code={globalcss} />
           </h1>
-          <p className="text-red-500 text-sm">Note Replace the mockup image with your image</p>
+          <p className="text-red-500 text-sm">
+            Note Replace the mockup image with your image
+          </p>
         </div>
 
         <div className="p-4">

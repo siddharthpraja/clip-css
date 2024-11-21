@@ -63,9 +63,9 @@ const Navbars = () => {
 
           <Link
             className="border px-2 w-max py-1 text-center rounded-lg"
-            href="/heros/unique"
+            href="/heros/tertiary"
           >
-            Copy this Hero Unique
+            Copy this Hero Tertiary
           </Link>
         </div>
       </div>

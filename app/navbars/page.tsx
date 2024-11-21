@@ -1,6 +1,3 @@
-import Feature1 from "@/components/Features/Feature1";
-import Feature2 from "@/components/Features/Feature2";
-import Feature3 from "@/components/Features/Feature3";
 import Navbar from "@/components/Navbars/Navbar1";
 import Navbar2 from "@/components/Navbars/Navbar2";
 import Navbar3 from "@/components/Navbars/Navbar3";
@@ -25,9 +22,9 @@ const Navbars = () => {
 
           <Link
             className="border px-2 w-max py-1 text-center rounded-lg"
-            href="/navbars/profeatures"
+            href="/navbars/simple"
           >
-            Copy this Primary Navbar
+            Copy this Simple Navbar
           </Link>
         </div>
         <div className="text-center h-full py-8 border rounded-lg ">
@@ -37,9 +34,9 @@ const Navbars = () => {
 
           <Link
             className="border px-2 w-max py-1 text-center rounded-lg"
-            href="/navbars/procategories"
+            href="/navbars/search"
           >
-            Copy this Secondery Navbar
+            Copy this Search Navbar
           </Link>
         </div>
         <div className="text-center h-full py-8 border rounded-lg ">
@@ -49,9 +46,9 @@ const Navbars = () => {
 
           <Link
             className="border px-2 w-max py-1 text-center rounded-lg"
-            href="/navbars/propages"
+            href="/navbars/tiny"
           >
-            Copy this Unique Navbar
+            Copy this Tiny Navbar
           </Link>
         </div>
       </div>

@@ -22,7 +22,7 @@ const Navbars = () => {
 
           <Link
             className="border px-2 w-max py-1 text-center rounded-lg"
-            href="/features/profeatures"
+            href="/products/profeatures"
           >
             Copy this Product Features
           </Link>
@@ -34,7 +34,7 @@ const Navbars = () => {
 
           <Link
             className="border px-2 w-max py-1 text-center rounded-lg"
-            href="/features/propages"
+            href="/products/propages"
           >
             Copy this Product page
           </Link>
@@ -46,7 +46,7 @@ const Navbars = () => {
 
           <Link
             className="border px-2 w-max py-1 text-center rounded-lg"
-            href="/features/procategories"
+            href="/products/procategories"
           >
             Copy this Products Categories
           </Link>

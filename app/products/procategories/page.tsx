@@ -1,7 +1,5 @@
 import CopyButton from "@/components/Copycode";
-import Feature1 from "@/components/Features/Feature1";
 import Feature3 from "@/components/Features/Feature3";
-import Hero1 from "@/components/Hero/Hero1";
 import Link from "next/link";
 import React from "react";
 import { BiArrowBack, BiHome } from "react-icons/bi";
@@ -169,9 +167,12 @@ const Navbars = () => {
       </div>
       <div className="w-2/3">
         <div className="p-4">
-          <strong>Step1:</strong> Add the following to your{" "}
-          <code className="text-blue-500">components/Categories.tsx</code>{" "}
-          file:
+          <strong>Step1:</strong> Install react-icons
+          <code className="text-blue-500"> {" "}npm i react-icons</code>
+        </div>
+        <div className="p-4">
+          <strong>Step2:</strong> Add the following to your{" "}
+          <code className="text-blue-500">components/Categories.tsx</code> file:
           <h1 className="">
             <CopyButton code={themeTogglecode} />
           </h1>

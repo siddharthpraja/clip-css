@@ -22,6 +22,7 @@ const Hero1 = () => {
       </Button3D>
       
       {/* Features or Icons grid component (can show utility features of Clip-CSS) */}
+      <IconGrid />
     </div>
   );
 };

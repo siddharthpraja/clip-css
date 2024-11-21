@@ -12,10 +12,9 @@ import ThemeToggle from "@/components/Buttons/Theme";
 import TubeButton from "@/components/Buttons/TubeButton";
 import { FaGamepad } from "react-icons/fa";
 
-
 export const buttons = [
   {
-    name: "3d",
+    name: "3d button",
     component: <Button3D>Click me</Button3D>,
     description: "Test this Simple 3D Button",
     className: "bg-black text-white dark:bg-white dark:text-black",
@@ -56,7 +55,7 @@ export default App;
 `,
   },
   {
-    name: "rainbow",
+    name: "rainbow button",
     component: <ButtonRainbow>Click me</ButtonRainbow>,
     description: "Test this Rainbow Button",
     code: `import React from "react";
@@ -102,7 +101,7 @@ export default App;
 `,
   },
   {
-    name: "dark",
+    name: "dark button",
     component: <ThemeToggle />,
     description: "Test this Dark Button",
     code: `"use client";
@@ -179,7 +178,7 @@ export default ThemeToggle;
 `,
   },
   {
-    name: "neon",
+    name: "neon button",
     component: <NeonButton neonColor="#00f0ff">Click me</NeonButton>,
     description: "Test this Neon Button",
     code: `import React from "react";
@@ -258,9 +257,9 @@ export default App;
 `,
   },
   {
-    name: "parallax",
+    name: "parallax button",
     component: (
-      <ParallaxButton className="bg-orange-500 text-black">
+      <ParallaxButton className=" bg-purple-500 text-black">
         Click me
       </ParallaxButton>
     ),
@@ -291,7 +290,7 @@ const App = () => {
 
   return (
     <div className="p-10">
-      <ParallaxButton className="bg-red-500">
+      <ParallaxButton className="bg-purple-500">
         Neon Green
       </ParallaxButton>
 
@@ -303,7 +302,7 @@ export default App;
 `,
   },
   {
-    name: "loading",
+    name: "loading button",
     component: <LoadingButton>Click me</LoadingButton>,
     description: "Test this Loading Button",
     code: `
@@ -365,7 +364,7 @@ export default App;
 `,
   },
   {
-    name: "medicine",
+    name: "medicine button",
     component: <MedicienButton>Click me</MedicienButton>,
     description: "Test this Medicine Button",
     code: `import React, { ButtonHTMLAttributes, ReactNode } from "react";
@@ -418,7 +417,7 @@ export default App;
 `,
   },
   {
-    name: "push",
+    name: "push button",
     component: <PushButton>Click me</PushButton>,
     description: "Test this Push Button",
     code: `import React, { ButtonHTMLAttributes, ReactNode, useState } from "react";
@@ -457,7 +456,7 @@ export default App;
     `,
   },
   {
-    name: "old",
+    name: "old button",
     component: <OldButton>Click me</OldButton>,
     description: "Test this Old PC Button",
     code: `import React, { ButtonHTMLAttributes, ReactNode } from "react";
@@ -499,7 +498,7 @@ export default App;
 `,
   },
   {
-    name: "tube",
+    name: "tube button",
     component: <TubeButton>Click me</TubeButton>,
     description: "Test this Tube-Light Button",
     code: `
@@ -543,7 +542,7 @@ export default App;
 `,
   },
   {
-    name: "game",
+    name: "game button",
     component: (
       <GameButton>
         <FaGamepad className="text-xl" /> Click me
@@ -586,7 +585,7 @@ export default App;
 `,
   },
   {
-    name: "switch",
+    name: "switch button",
     component: <SwitchButton>Click me</SwitchButton>,
     description: "Test this Switch Button",
     code: `import React, { ButtonHTMLAttributes, ReactNode } from "react";
