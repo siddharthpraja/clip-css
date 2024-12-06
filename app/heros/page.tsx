@@ -6,14 +6,14 @@ import { BiArrowBack, BiHome } from "react-icons/bi";
 
 const Navbars = () => {
   return (
-    <div className="h-full overflow-hidden">
+    <div className="h-max overflow-hidden">
       <Link
         href={"./"}
         className="border px-2 w-max mx-2 flex gap-2 items-center hover:bg-black hover:text-white py-1 rounded-lg my-2"
       >
         <BiArrowBack /> Back
       </Link>
-      <div className="grid grid-cols-1 px-2 lg:grid-cols-3 gap-2">
+      <div className="grid grid-cols-1 p-2 lg:grid-cols-3 gap-2">
         <div className="text-center h-full py-8 border rounded-lg">
           <div className="h-max">
             <Image
@@ -66,6 +66,42 @@ const Navbars = () => {
             href="/heros/tertiary"
           >
             Copy this Hero Tertiary
+          </Link>
+        </div>
+        <div className="text-center h-full py-8 border rounded-lg">
+          <div className="h-max">
+            <Image
+              src={"/hero4.png"}
+              alt="hero3"
+              width={2500}
+              height={2500}
+              className="w-full bg-contain mb-4"
+            />
+          </div>
+
+          <Link
+            className="border px-2 w-max py-1 text-center rounded-lg"
+            href="/heros/fourth"
+          >
+            Copy this Hero Fourth
+          </Link>
+        </div>
+        <div className="text-center h-full py-8 border rounded-lg">
+          <div className="h-max">
+            <Image
+              src={"/hero5.png"}
+              alt="hero5"
+              width={2500}
+              height={2500}
+              className="w-full bg-contain mb-4"
+            />
+          </div>
+
+          <Link
+            className="border px-2 w-max py-1 text-center rounded-lg"
+            href="/heros/fifth"
+          >
+            Copy this Hero Fifth
           </Link>
         </div>
       </div>

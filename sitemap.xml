@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://clipcss.sidth.tech/</loc>
+  <lastmod>2024-11-30T15:28:57+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://clipcss.sidth.tech/buttons</loc>
+  <lastmod>2024-11-30T15:28:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://clipcss.sidth.tech/navbars</loc>
+  <lastmod>2024-11-30T15:28:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://clipcss.sidth.tech/heros</loc>
+  <lastmod>2024-11-30T15:28:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://clipcss.sidth.tech/products</loc>
+  <lastmod>2024-11-30T15:28:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://clipcss.sidth.tech/soon</loc>
+  <lastmod>2024-11-30T15:28:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://clipcss.sidth.tech/buttons/test</loc>
+  <lastmod>2024-11-30T15:28:57+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://clipcss.sidth.tech/navbars/simple</loc>
+  <lastmod>2024-11-30T15:28:57+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://clipcss.sidth.tech/navbars/search</loc>
+  <lastmod>2024-11-30T15:28:57+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://clipcss.sidth.tech/navbars/tiny</loc>
+  <lastmod>2024-11-30T15:28:57+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://clipcss.sidth.tech/heros/primary</loc>
+  <lastmod>2024-11-30T15:28:57+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://clipcss.sidth.tech/heros/secondary</loc>
+  <lastmod>2024-11-30T15:28:57+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://clipcss.sidth.tech/heros/tertiary</loc>
+  <lastmod>2024-11-30T15:28:57+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://clipcss.sidth.tech/products/profeatures</loc>
+  <lastmod>2024-11-30T15:28:57+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://clipcss.sidth.tech/products/propages</loc>
+  <lastmod>2024-11-30T15:28:57+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://clipcss.sidth.tech/products/procategories</loc>
+  <lastmod>2024-11-30T15:28:57+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
